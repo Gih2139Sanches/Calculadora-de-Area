@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Área</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="title">Calculadora de Área &nbsp; <div class="img"><img src="imagens/triangulo-retangulo.png" width="65" height="65"></div></div>
+        <div>
+        <div class="input">
+            <label>Triângulo:</label>
+            <div class="option">
+           <select name="nome" id="nome">
+             <option value="Isósceles">Isósceles</option>
+             <option value="Escaleno">Escaleno</option>
+             <option value="Equilátero">Equilátero</option>
+             <option value="Retângulo">Retângulo</option>
+             <option value="Obtusângulo">Obtusângulo</option>
+             <option value="Acutângulo">Acutângulo</option>
+          </select>
+          </div>
+        </div>
+        <div class="input">
+            <label>Altura:</label>
+            <input type="number" onclick="ficar1()" id='altura'>
+        </div>
+        <div class="input">
+            <label>Largura:</label>
+            <input type="number" onclick="ficar2()" id='largura'>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column;">  
+        <button id='calcular'>Calcular</button>
+        <button type="reset" onclick="limpar();">Limpar</button>
+      </div>
+        <div class="result" id='resultado'></div>
+      </div>
+    </main>
+    <script src="js/calc.js"></script>
+  </body>
+</html> 
